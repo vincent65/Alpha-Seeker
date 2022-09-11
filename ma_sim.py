@@ -1,9 +1,8 @@
-from cgi import print_environ
-from concurrent.futures import process
-from inspect import getclosurevars
+from urllib.parse import _ResultMixinBytes
 import pandas as pd
 import utils
 import instrument
+import ma_result
 
 pd.set_option("display.max_columns", None)
 
@@ -28,9 +27,9 @@ def evaluate_pair(i_pair, mashort, malong, price_data):
     df_trades["DELTA"] = (df_trades.mid_c.diff() / i_pair.pipLocation).shift(-1)
     df_trades["GAIN"] = df_trades["DELTA"] * df_trades["IS_TRADE"]
     
-    print(f"{i_pair.name} {mashort} {malong} trades:{df_trades.shape[0]} gain:{df_trades['GAIN'].sum():.0f}")    
+    # print(f"{i_pair.name} {mashort} {malong} trades:{df_trades.shape[0]} gain:{df_trades['GAIN'].sum():.0f}")    
     
-    return df_trades['GAIN'].sum()
+    return ma_result.MAResult(i_pair.name, df_trades, params={'mashort':mashort, 'malong':malong})
     
 def get_price_data(pair, granularity):
     df = pd.read_pickle(utils.get_hist_data_filename(pair, granularity))
@@ -48,32 +47,44 @@ def process_data(ma_short, ma_long, price_data):
         price_data[get_col_ma(ma)] = price_data.mid_c.rolling(window=ma).mean()
     return price_data
 
+def process_results(results):
+    results_list = [r.result_ob() for r in results]
+    final_df = pd.DataFrame.from_dict(results_list)
+    final_df.to_pickle("ma_test_res.pkl")
+    print(final_df.shape() + final_df.num_trades.sum())
+    
+def get_test_pairs(pair_str):
+   existing_pairs = instrument.Instrument.get_instruments_dict().keys()
+   pairs = pair_str.split(",")
+   ret = []
+   for p1 in pairs:
+       for p2 in pairs:
+           p = f"{p1}_{p2}"
+           if p in existing_pairs:
+                ret.append(p)
+   return ret    
+
 def run():
-    pairname = "GBP_JPY"
+    currencies = "GBP,EUR,USD,CAD,JPY,NZD,CHF"
+    pairs = get_test_pairs(currencies)
     granularity = "H1"
-    ma_short = {8,16,32,64}
-    ma_long = {32,64,96,128,256}
+    ma_short = {4,8,16,24,32,64}
+    ma_long = {8,16,32,64,96,128,256}
+    results = []
+    for pairname in pairs:
+        print("Testing " + pairname)
+        i_pair = instrument.Instrument.get_instrument_by_name(pairname)
+        price_data = get_price_data(pairname, granularity)
+        price_data = process_data(ma_short, ma_long, price_data)
+        
+        for long in ma_long:
+            for short in ma_short:
+                if short >= long:
+                    continue
+                #evaluate performance of 
+                results.append(evaluate_pair(i_pair, short, long, price_data.copy()))
     
-    i_pair = instrument.Instrument.get_instrument_by_name(pairname)
-    price_data = get_price_data(pairname, granularity)
-    price_data = process_data(ma_short, ma_long, price_data)
-    
-    best = -9999999
-    best_short = 0
-    best_long = 0   
-    
-    for long in ma_long:
-        for short in ma_short:
-            if short >= long:
-                continue
-            #evaluate performance of 
-            res = evaluate_pair(i_pair, short, long, price_data.copy())
-            if res >= best:
-                best = res
-                best_short = short
-                best_long = long
-    
-    print(f"Best:{best:.0f} MASHORT:{best_short:.0f} MALONG:{best_long:.0f}")
+    process_results(results) 
     
 if __name__ == "__main__":
     run()
