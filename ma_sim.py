@@ -1,4 +1,4 @@
-from urllib.parse import _ResultMixinBytes
+from dateutil.parser import *
 import pandas as pd
 import utils
 import instrument
@@ -17,6 +17,7 @@ def get_col_ma(ma):
     return f"MA_{ma}"
 
 def evaluate_pair(i_pair, mashort, malong, price_data):
+    price_data = price_data[['time', 'mid_c', get_col_ma(mashort), get_col_ma(malong)]].copy()
     #determine trades
     price_data['DIFF'] = price_data[get_col_ma(mashort)] - price_data[get_col_ma(malong)]
     price_data['DIFF_PREV'] = price_data.DIFF.shift(1)
@@ -26,7 +27,18 @@ def evaluate_pair(i_pair, mashort, malong, price_data):
     df_trades = price_data[price_data.IS_TRADE!=0].copy()
     df_trades["DELTA"] = (df_trades.mid_c.diff() / i_pair.pipLocation).shift(-1)
     df_trades["GAIN"] = df_trades["DELTA"] * df_trades["IS_TRADE"]
+    df_trades["time"] = [parse(x) for x in df_trades.time]
     
+    df_trades["PAIR"] = i_pair.name
+    df_trades["MASHORT"] = mashort
+    df_trades["MALONG"] = malong
+    del df_trades[get_col_ma(mashort)]
+    del df_trades[get_col_ma(malong)]
+    
+    df_trades["DURATION"] = df_trades.time.diff().shift(-1)
+    df_trades["DURATION"] = [x.total_seconds() / 3600 for x in df_trades.DURATION]
+    
+    df_trades.dropna(inplace=True)
     # print(f"{i_pair.name} {mashort} {malong} trades:{df_trades.shape[0]} gain:{df_trades['GAIN'].sum():.0f}")    
     
     return ma_result.MAResult(i_pair.name, df_trades, params={'mashort':mashort, 'malong':malong})
@@ -47,11 +59,16 @@ def process_data(ma_short, ma_long, price_data):
         price_data[get_col_ma(ma)] = price_data.mid_c.rolling(window=ma).mean()
     return price_data
 
+def store_trades(results):
+    all_trades_list = [x.df_trades for x in results]
+    all_trade_df = pd.concat(all_trades_list)
+    all_trade_df.to_pickle("all_trades.pkl")
+
 def process_results(results):
     results_list = [r.result_ob() for r in results]
     final_df = pd.DataFrame.from_dict(results_list)
     final_df.to_pickle("ma_test_res.pkl")
-    print(final_df.shape() + final_df.num_trades.sum())
+    print(final_df.shape, final_df.num_trades.sum())
     
 def get_test_pairs(pair_str):
    existing_pairs = instrument.Instrument.get_instruments_dict().keys()
@@ -82,9 +99,10 @@ def run():
                 if short >= long:
                     continue
                 #evaluate performance of 
-                results.append(evaluate_pair(i_pair, short, long, price_data.copy()))
+                results.append(evaluate_pair(i_pair, short, long, price_data))
     
     process_results(results) 
+    store_trades(results)
     
 if __name__ == "__main__":
     run()
