@@ -1,3 +1,4 @@
+from sqlite3 import DateFromTicks
 import requests
 import pandas as pd
 import defs
@@ -27,13 +28,23 @@ class OandaAPI():
         if instrument_df is not None:
             instrument_df.to_pickle("instruments.pkl")
     
-    def fetch_candles(self, pair_name, count, granularity):
+    #hist dat fetching; historical data is still limited to a max of 5000 candles
+    def fetch_candles(self, pair_name, count=None, granularity="H1", date_from = None, date_to = None):
         url = f"{defs.OANDA_URL}/instruments/{pair_name}/candles"
         params = dict(
-            count = count,
             granularity = granularity,
             price = "MBA"
         )
+        
+        if date_from is not None and date_to is not None:
+            params['to'] = int(date_to.timestamp())
+            params['from'] = int(date_from.timestamp())
+        #of dates are not specified get last however many trades
+        elif count is not None:
+            params['count'] = count
+        else:
+            params['count'] = 300
+            
         response = self.session.get(url, params=params, headers = defs.SECURE_HEADER)
         return response.status_code, response.json()
     
@@ -41,5 +52,7 @@ class OandaAPI():
     
 if __name__ == '__main__':
     api = OandaAPI()
-    api.save_instruments()
-    
+    # api.save_instruments()
+    date_from = utils.get_utc_dt_from_string("2022-06-06 17:00:00")
+    date_to = utils.get_utc_dt_from_string("2022-06-20 17:00:00")
+    print(api.fetch_candles("EUR_USD", date_from=date_from, date_to = date_to))
