@@ -46,6 +46,9 @@ class OandaAPI():
             params['count'] = 300
             
         response = self.session.get(url, params=params, headers = defs.SECURE_HEADER)
+        
+        if response.status_code != 200:
+            return response.status_code, None
         return response.status_code, response.json()
     
     
