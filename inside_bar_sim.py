@@ -159,7 +159,7 @@ def run():
         h4_data = pd.read_pickle(utils.get_his_data_filename(pairname, "H4"))
         m5_data = pd.read_pickle(utils.get_his_data_filename(pairname, "M5"))
 
-        df_trades = get_trades_df(h4_data)
+        df_trades = get_trades_df(h4_data) 
 
         score = evaluate_pair(df_trades, m5_data)
         grand_total += score
