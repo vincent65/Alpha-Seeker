@@ -1,27 +1,49 @@
-2022-11-25 13:26:11 LogWapper init() ./logs/TradingBot.log
-2022-11-25 13:26:11 Bot started with
-{'AUD_USD': {'pair': 'AUD_USD', 'units': 1000, 'short_ma': 8, 'long_ma': 32},
- 'EUR_USD': {'pair': 'EUR_USD', 'units': 1000, 'short_ma': 4, 'long_ma': 16},
- 'GBP_JPY': {'pair': 'GBP_JPY', 'units': 1000, 'short_ma': 4, 'long_ma': 16},
- 'GBP_USD': {'pair': 'GBP_USD', 'units': 1000, 'short_ma': 8, 'long_ma': 32}}
-2022-11-25 13:26:11 Bot Timings
-{'AUD_USD': {'last_candle': Timestamp('2022-11-25 18:25:00+0000', tz='tzutc()'), 'ready': False},
- 'EUR_USD': {'last_candle': Timestamp('2022-11-25 18:25:00+0000', tz='tzutc()'), 'ready': False},
- 'GBP_JPY': {'last_candle': Timestamp('2022-11-25 18:25:00+0000', tz='tzutc()'), 'ready': False},
- 'GBP_USD': {'last_candle': Timestamp('2022-11-25 18:25:00+0000', tz='tzutc()'), 'ready': False}}
-2022-11-25 13:27:03 GBP_JPY new candle 2022-11-25 18:26:00+00:00
-2022-11-25 13:27:03 GBP_USD new candle 2022-11-25 18:26:00+00:00
-2022-11-25 13:27:03 READY TO TRADE GBP_JPY
-2022-11-25 13:27:03 READY TO TRADE GBP_USD
-2022-11-25 13:27:14 EUR_USD new candle 2022-11-25 18:26:00+00:00
-2022-11-25 13:27:15 AUD_USD new candle 2022-11-25 18:26:00+00:00
-2022-11-25 13:27:15 READY TO TRADE EUR_USD
-2022-11-25 13:27:15 READY TO TRADE AUD_USD
-2022-11-25 13:28:06 EUR_USD new candle 2022-11-25 18:27:00+00:00
-2022-11-25 13:28:06 GBP_JPY new candle 2022-11-25 18:27:00+00:00
-2022-11-25 13:28:06 AUD_USD new candle 2022-11-25 18:27:00+00:00
-2022-11-25 13:28:06 GBP_USD new candle 2022-11-25 18:27:00+00:00
-2022-11-25 13:28:06 READY TO TRADE EUR_USD
-2022-11-25 13:28:06 READY TO TRADE GBP_JPY
-2022-11-25 13:28:06 READY TO TRADE AUD_USD
-2022-11-25 13:28:06 READY TO TRADE GBP_USD
+2022-11-25 14:36:06 LogWapper init() ./logs/TradingBot.log
+2022-11-25 14:36:07 Bot started with
+{'AUD_USD': {'pair': 'AUD_USD', 'units': 1000, 'short_ma': 2, 'long_ma': 8},
+ 'EUR_CHF': {'pair': 'EUR_CHF', 'units': 1000, 'short_ma': 2, 'long_ma': 8},
+ 'EUR_GBP': {'pair': 'EUR_GBP', 'units': 1000, 'short_ma': 2, 'long_ma': 8},
+ 'EUR_USD': {'pair': 'EUR_USD', 'units': 1000, 'short_ma': 2, 'long_ma': 8},
+ 'GBP_JPY': {'pair': 'GBP_JPY', 'units': 1000, 'short_ma': 2, 'long_ma': 8},
+ 'GBP_USD': {'pair': 'GBP_USD', 'units': 1000, 'short_ma': 2, 'long_ma': 8}}
+2022-11-25 14:36:07 Bot Timings
+{'AUD_USD': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False},
+ 'EUR_CHF': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False},
+ 'EUR_GBP': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False},
+ 'EUR_USD': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False},
+ 'GBP_JPY': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False},
+ 'GBP_USD': {'last_candle': Timestamp('2022-11-25 19:35:00+0000', tz='tzutc()'), 'ready': False}}
+2022-11-25 14:37:10 GBP_JPY new candle 2022-11-25 19:36:00+00:00
+2022-11-25 14:37:10 AUD_USD new candle 2022-11-25 19:36:00+00:00
+2022-11-25 14:37:10 GBP_USD new candle 2022-11-25 19:36:00+00:00
+2022-11-25 14:37:10 EUR_CHF new candle 2022-11-25 19:36:00+00:00
+2022-11-25 14:37:10 EUR_GBP new candle 2022-11-25 19:36:00+00:00
+2022-11-25 14:37:10 READY TO TRADE GBP_JPY
+2022-11-25 14:37:10 READY TO TRADE AUD_USD
+2022-11-25 14:37:10 READY TO TRADE GBP_USD
+2022-11-25 14:37:10 READY TO TRADE EUR_CHF
+2022-11-25 14:37:10 READY TO TRADE EUR_GBP
+2022-11-25 14:38:02 EUR_USD new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:02 GBP_JPY new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:02 GBP_USD new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:02 EUR_CHF new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:02 EUR_GBP new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:02 READY TO TRADE EUR_USD
+2022-11-25 14:38:03 READY TO TRADE GBP_JPY
+2022-11-25 14:38:03 READY TO TRADE GBP_USD
+2022-11-25 14:38:03 READY TO TRADE EUR_CHF
+2022-11-25 14:38:03 READY TO TRADE EUR_GBP
+2022-11-25 14:38:13 AUD_USD new candle 2022-11-25 19:37:00+00:00
+2022-11-25 14:38:13 READY TO TRADE AUD_USD
+2022-11-25 14:39:05 EUR_USD new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:05 GBP_JPY new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:06 AUD_USD new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:06 GBP_USD new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:06 EUR_CHF new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:06 EUR_GBP new candle 2022-11-25 19:38:00+00:00
+2022-11-25 14:39:06 READY TO TRADE EUR_USD
+2022-11-25 14:39:06 READY TO TRADE GBP_JPY
+2022-11-25 14:39:06 READY TO TRADE AUD_USD
+2022-11-25 14:39:06 READY TO TRADE GBP_USD
+2022-11-25 14:39:06 READY TO TRADE EUR_CHF
+2022-11-25 14:39:06 READY TO TRADE EUR_GBP
