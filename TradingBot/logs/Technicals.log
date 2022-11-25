@@ -1,0 +1,289 @@
+2022-11-25 15:01:40 LogWapper init() ./logs/Technicals.log
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:02:02 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:00:00+00:00     105  1.04120  0.00033  EUR_USD  1.04118  1.040982     1.04120        NaN       NaN  0.000198
+8 2022-11-25 20:01:00+00:00     102  1.04118  0.00033  EUR_USD  1.04119  1.041045     1.04118   1.040982  0.000198  0.000145
+2022-11-25 15:02:02 Trade_decision:0
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:02:02 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:00:00+00:00      70  0.67452  0.0004  AUD_USD  0.674575  0.674588    0.674615        NaN       NaN -0.000013
+8 2022-11-25 20:01:00+00:00     103  0.67483  0.0012  AUD_USD  0.674675  0.674606    0.674575   0.674588 -0.000013  0.000069
+2022-11-25 15:02:02 Trade_decision:1
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:02:02 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:00:00+00:00     178  1.20999  0.0015  GBP_USD  1.209850  1.209211     1.20945        NaN       NaN  0.000639
+8 2022-11-25 20:01:00+00:00     138  1.20982  0.0015  GBP_USD  1.209905  1.209324     1.20985   1.209211  0.000639  0.000581
+2022-11-25 15:02:02 Trade_decision:0
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:02:02 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:00:00+00:00     107  0.98409  0.00126  EUR_CHF  0.984075  0.983876    0.984030        NaN       NaN  0.000199
+8 2022-11-25 20:01:00+00:00      79  0.98381  0.00108  EUR_CHF  0.983950  0.983894    0.984075   0.983876  0.000199  0.000056
+2022-11-25 15:02:02 Trade_decision:0
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 
+2022-11-25 15:02:02 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:02:03 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:00:00+00:00     590  0.86038  0.00115  EUR_GBP  0.86058  0.860862     0.86093        NaN       NaN -0.000282
+8 2022-11-25 20:01:00+00:00     209  0.86082  0.00150  EUR_GBP  0.86060  0.860865     0.86058   0.860862 -0.000282 -0.000265
+2022-11-25 15:02:03 Trade_decision:0
+2022-11-25 15:02:03 
+2022-11-25 15:02:13 
+2022-11-25 15:02:13 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:02:13 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR   MA_2        MA_8  PREV_SHORT   PREV_LONG    D_PREV     D_NOW
+8 2022-11-25 20:00:00+00:00      98  168.211    0.15  GBP_JPY  168.2  168.128000    168.1545  168.112625  0.041875  0.072000
+9 2022-11-25 20:01:00+00:00      60  168.189    0.15  GBP_JPY  168.2  168.140875    168.2000  168.128000  0.072000  0.059125
+2022-11-25 15:02:13 Trade_decision:0
+2022-11-25 15:02:13 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00     102  1.04118  0.00033  EUR_USD  1.04119  1.041045     1.04118        NaN       NaN  0.000145
+8 2022-11-25 20:02:00+00:00      67  1.04112  0.00040  EUR_USD  1.04115  1.041100     1.04119   1.041045  0.000145  0.000050
+2022-11-25 15:03:06 Trade_decision:0
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR    MA_2        MA_8  PREV_SHORT   PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00      60  168.189    0.15  GBP_JPY  168.20  168.140875       168.2         NaN       NaN  0.059125
+8 2022-11-25 20:02:00+00:00      12  168.171    0.15  GBP_JPY  168.18  168.151500       168.2  168.140875  0.059125  0.028500
+2022-11-25 15:03:06 Trade_decision:0
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00     103  0.67483  0.00120  AUD_USD  0.674675  0.674606    0.674575        NaN       NaN  0.000069
+8 2022-11-25 20:02:00+00:00      56  0.67497  0.00128  AUD_USD  0.674900  0.674644    0.674675   0.674606  0.000069  0.000256
+2022-11-25 15:03:06 Trade_decision:0
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00     138  1.20982  0.0015  GBP_USD  1.209905  1.209324    1.209850        NaN       NaN  0.000581
+8 2022-11-25 20:02:00+00:00     129  1.20964  0.0015  GBP_USD  1.209730  1.209414    1.209905   1.209324  0.000581  0.000316
+2022-11-25 15:03:06 Trade_decision:0
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00      79  0.98381  0.00108  EUR_CHF  0.98395  0.983894    0.984075        NaN       NaN  0.000056
+8 2022-11-25 20:02:00+00:00     101  0.98355  0.00150  EUR_CHF  0.98368  0.983878    0.983950   0.983894  0.000056 -0.000198
+2022-11-25 15:03:06 Trade_decision:-1
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 
+2022-11-25 15:03:06 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:03:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR    MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:01:00+00:00     209  0.86082  0.0015  EUR_GBP  0.8606  0.860865     0.86058        NaN       NaN -0.000265
+8 2022-11-25 20:02:00+00:00     174  0.86078  0.0015  EUR_GBP  0.8608  0.860858     0.86060   0.860865 -0.000265 -0.000058
+2022-11-25 15:03:06 Trade_decision:0
+2022-11-25 15:03:06 
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:04:09 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG   D_PREV    D_NOW
+7 2022-11-25 20:02:00+00:00      67  1.04112  0.00040  EUR_USD  1.041150  1.041100     1.04119        NaN      NaN  0.00005
+8 2022-11-25 20:03:00+00:00     266  1.04107  0.00032  EUR_USD  1.041095  1.041145     1.04115     1.0411  0.00005 -0.00005
+2022-11-25 15:04:09 Trade_decision:-1
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:04:09 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG  D_PREV   D_NOW
+7 2022-11-25 20:02:00+00:00      12  168.171    0.15  GBP_JPY  168.1800  168.1515      168.20        NaN     NaN  0.0285
+8 2022-11-25 20:03:00+00:00      78  168.182    0.15  GBP_JPY  168.1765  168.1635      168.18   168.1515  0.0285  0.0130
+2022-11-25 15:04:09 Trade_decision:0
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:04:09 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:02:00+00:00      56  0.67497  0.00128  AUD_USD  0.674900  0.674644    0.674675        NaN       NaN  0.000256
+8 2022-11-25 20:03:00+00:00      48  0.67494  0.00127  AUD_USD  0.674955  0.674686    0.674900   0.674644  0.000256  0.000269
+2022-11-25 15:04:09 Trade_decision:0
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 
+2022-11-25 15:04:09 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:04:10 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:02:00+00:00     129  1.20964  0.0015  GBP_USD  1.20973  1.209414    1.209905        NaN       NaN  0.000316
+8 2022-11-25 20:03:00+00:00     161  1.20980  0.0015  GBP_USD  1.20972  1.209511    1.209730   1.209414  0.000316  0.000209
+2022-11-25 15:04:10 Trade_decision:0
+2022-11-25 15:04:10 
+2022-11-25 15:04:10 
+2022-11-25 15:04:10 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:04:10 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:02:00+00:00     101  0.98355  0.0015  EUR_CHF  0.983680  0.983877     0.98395        NaN       NaN -0.000197
+8 2022-11-25 20:03:00+00:00      93  0.98356  0.0015  EUR_CHF  0.983555  0.983865     0.98368   0.983877 -0.000197 -0.000310
+2022-11-25 15:04:10 Trade_decision:0
+2022-11-25 15:04:10 
+2022-11-25 15:04:10 
+2022-11-25 15:04:10 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:04:10 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:02:00+00:00     174  0.86078  0.0015  EUR_GBP  0.860800  0.860858      0.8606        NaN       NaN -0.000058
+8 2022-11-25 20:03:00+00:00     350  0.86083  0.0015  EUR_GBP  0.860805  0.860856      0.8608   0.860858 -0.000058 -0.000051
+2022-11-25 15:04:10 Trade_decision:0
+2022-11-25 15:04:10 
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:05:02 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2        MA_8  PREV_SHORT  PREV_LONG  D_PREV     D_NOW
+7 2022-11-25 20:03:00+00:00      78  168.182    0.15  GBP_JPY  168.1765  168.163500    168.1800        NaN     NaN  0.013000
+8 2022-11-25 20:04:00+00:00     111  168.189    0.15  GBP_JPY  168.1855  168.173375    168.1765   168.1635   0.013  0.012125
+2022-11-25 15:05:02 Trade_decision:0
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:05:02 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:03:00+00:00      48  0.67494  0.00127  AUD_USD  0.674955  0.674686    0.674900        NaN       NaN  0.000269
+8 2022-11-25 20:04:00+00:00      34  0.67498  0.00130  AUD_USD  0.674960  0.674746    0.674955   0.674686  0.000269  0.000214
+2022-11-25 15:05:02 Trade_decision:0
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:05:02 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:03:00+00:00     161  1.20980  0.0015  GBP_USD  1.209720  1.209511     1.20973        NaN       NaN  0.000209
+8 2022-11-25 20:04:00+00:00     100  1.20981  0.0015  GBP_USD  1.209805  1.209607     1.20972   1.209511  0.000209  0.000198
+2022-11-25 15:05:02 Trade_decision:0
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 
+2022-11-25 15:05:02 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:05:03 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:03:00+00:00     350  0.86083  0.00150  EUR_GBP  0.860805  0.860856    0.860800        NaN       NaN -0.000051
+8 2022-11-25 20:04:00+00:00     187  0.86057  0.00138  EUR_GBP  0.860700  0.860830    0.860805   0.860856 -0.000051 -0.000130
+2022-11-25 15:05:03 Trade_decision:0
+2022-11-25 15:05:03 
+2022-11-25 15:05:13 
+2022-11-25 15:05:13 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:05:13 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG   D_PREV     D_NOW
+8 2022-11-25 20:03:00+00:00     266  1.04107  0.00032  EUR_USD  1.041095  1.041145    1.041150   1.041100  0.00005 -0.000050
+9 2022-11-25 20:04:00+00:00      24  1.04104  0.00050  EUR_USD  1.041055  1.041174    1.041095   1.041145 -0.00005 -0.000119
+2022-11-25 15:05:13 Trade_decision:0
+2022-11-25 15:05:13 
+2022-11-25 15:05:13 
+2022-11-25 15:05:13 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:05:13 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV    D_NOW
+8 2022-11-25 20:03:00+00:00      93  0.98356  0.0015  EUR_CHF  0.983555  0.983865    0.983680   0.983877 -0.000197 -0.00031
+9 2022-11-25 20:04:00+00:00       8  0.98340  0.0015  EUR_CHF  0.983480  0.983830    0.983555   0.983865 -0.000310 -0.00035
+2022-11-25 15:05:13 Trade_decision:0
+2022-11-25 15:05:13 
+2022-11-25 15:06:05 
+2022-11-25 15:06:05 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+8 2022-11-25 20:04:00+00:00      24  1.04104  0.0005  EUR_USD  1.041055  1.041174    1.041095   1.041145 -0.000050 -0.000119
+9 2022-11-25 20:05:00+00:00       1  1.04108  0.0005  EUR_USD  1.041060  1.041136    1.041055   1.041174 -0.000119 -0.000076
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2        MA_8  PREV_SHORT   PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:04:00+00:00     111  168.189    0.15  GBP_JPY  168.1855  168.173375    168.1765         NaN       NaN  0.012125
+8 2022-11-25 20:05:00+00:00     124  168.181    0.15  GBP_JPY  168.1850  168.179000    168.1855  168.173375  0.012125  0.006000
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:04:00+00:00      34  0.67498  0.00130  AUD_USD  0.67496  0.674746    0.674955        NaN       NaN  0.000214
+8 2022-11-25 20:05:00+00:00       7  0.67498  0.00132  AUD_USD  0.67498  0.674806    0.674960   0.674746  0.000214  0.000174
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:04:00+00:00     100  1.20981  0.0015  GBP_USD  1.209805  1.209607    1.209720        NaN       NaN  0.000198
+8 2022-11-25 20:05:00+00:00     130  1.20969  0.0015  GBP_USD  1.209750  1.209706    1.209805   1.209607  0.000198  0.000044
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2     MA_8  PREV_SHORT  PREV_LONG   D_PREV     D_NOW
+8 2022-11-25 20:04:00+00:00       8  0.98340  0.0015  EUR_CHF  0.983480  0.98383    0.983555   0.983865 -0.00031 -0.000350
+9 2022-11-25 20:05:00+00:00       5  0.98345  0.0015  EUR_CHF  0.983425  0.98374    0.983480   0.983830 -0.00035 -0.000315
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 
+2022-11-25 15:06:06 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:06:06 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG   D_PREV    D_NOW
+7 2022-11-25 20:04:00+00:00     187  0.86057  0.00138  EUR_GBP  0.860700  0.860830    0.860805        NaN      NaN -0.00013
+8 2022-11-25 20:05:00+00:00     585  0.86072  0.00121  EUR_GBP  0.860645  0.860745    0.860700    0.86083 -0.00013 -0.00010
+2022-11-25 15:06:06 Trade_decision:0
+2022-11-25 15:06:06 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:EUR_USD max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:05:00+00:00       1  1.04108  0.0005  EUR_USD  1.04106  1.041136    1.041055        NaN       NaN -0.000076
+8 2022-11-25 20:06:00+00:00      66  1.04116  0.0005  EUR_USD  1.04112  1.041126    1.041060   1.041136 -0.000076 -0.000006
+2022-11-25 15:07:09 Trade_decision:0
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:GBP_JPY max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2     MA_8  PREV_SHORT  PREV_LONG  D_PREV   D_NOW
+7 2022-11-25 20:05:00+00:00     124  168.181    0.15  GBP_JPY  168.1850  168.179    168.1855        NaN     NaN  0.0060
+8 2022-11-25 20:06:00+00:00      94  168.208    0.15  GBP_JPY  168.1945  168.190    168.1850    168.179   0.006  0.0045
+2022-11-25 15:07:09 Trade_decision:0
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:AUD_USD max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR     MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:05:00+00:00       7  0.67498  0.00132  AUD_USD  0.67498  0.674806     0.67496        NaN       NaN  0.000174
+8 2022-11-25 20:06:00+00:00       2  0.67498  0.00132  AUD_USD  0.67498  0.674854     0.67498   0.674806  0.000174  0.000126
+2022-11-25 15:07:09 Trade_decision:0
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:GBP_USD max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c  SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:05:00+00:00     130  1.20969  0.0015  GBP_USD  1.209750  1.209706    1.209805        NaN       NaN  0.000044
+8 2022-11-25 20:06:00+00:00     177  1.20986  0.0015  GBP_USD  1.209775  1.209790    1.209750   1.209706  0.000044 -0.000015
+2022-11-25 15:07:09 Trade_decision:-1
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:EUR_CHF max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG    D_PREV     D_NOW
+7 2022-11-25 20:05:00+00:00       5  0.98345  0.00150  EUR_CHF  0.983425  0.983740    0.983480        NaN       NaN -0.000315
+8 2022-11-25 20:06:00+00:00     125  0.98358  0.00147  EUR_CHF  0.983515  0.983688    0.983425    0.98374 -0.000315 -0.000173
+2022-11-25 15:07:09 Trade_decision:0
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 
+2022-11-25 15:07:09 get_trade_decision() pair:EUR_GBP max_rows:10
+2022-11-25 15:07:09 Processed_df
+                       time  volume    mid_c   SPREAD     PAIR      MA_2      MA_8  PREV_SHORT  PREV_LONG  D_PREV    D_NOW
+7 2022-11-25 20:05:00+00:00     585  0.86072  0.00121  EUR_GBP  0.860645  0.860745    0.860700        NaN     NaN -0.00010
+8 2022-11-25 20:06:00+00:00     474  0.86080  0.00115  EUR_GBP  0.860760  0.860710    0.860645   0.860745 -0.0001  0.00005
+2022-11-25 15:07:09 Trade_decision:1
+2022-11-25 15:07:09 

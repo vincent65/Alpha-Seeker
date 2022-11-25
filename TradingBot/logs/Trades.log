@@ -1,0 +1,22 @@
+2022-11-25 15:01:40 LogWapper init() ./logs/Trades.log
+2022-11-25 15:02:03 TradeManager:place_trades() [{'pair': 'AUD_USD', 'units': 1000}]
+2022-11-25 15:02:03 TradeManager:close_trades() pairs_to_close:['AUD_USD'] 
+2022-11-25 15:02:03 TradeManager:close_trades() open_trades:[] 
+2022-11-25 15:02:03 TradeManager:close_trades() ids_to_close:[] 
+2022-11-25 15:02:03 TradeManager:Opened (43, True) {'pair': 'AUD_USD', 'units': 1000}
+2022-11-25 15:03:06 TradeManager:place_trades() [{'pair': 'EUR_CHF', 'units': -1000}]
+2022-11-25 15:03:06 TradeManager:close_trades() pairs_to_close:['EUR_CHF'] 
+2022-11-25 15:03:06 TradeManager:close_trades() open_trades:[{'unrealizedPL': -1.07, 'currentUnits': 1000.0, 'id': 43, 'openTime': datetime.datetime(2022, 11, 25, 20, 2, 3, 194642, tzinfo=tzutc()), 'instrument': 'AUD_USD'}] 
+2022-11-25 15:03:06 TradeManager:close_trades() ids_to_close:[] 
+2022-11-25 15:03:06 TradeManager:Opened (45, True) {'pair': 'EUR_CHF', 'units': -1000}
+2022-11-25 15:04:10 TradeManager:place_trades() [{'pair': 'EUR_USD', 'units': -1000}]
+2022-11-25 15:04:10 TradeManager:close_trades() pairs_to_close:['EUR_USD'] 
+2022-11-25 15:04:10 TradeManager:close_trades() open_trades:[{'unrealizedPL': -1.3722, 'currentUnits': -1000.0, 'id': 45, 'openTime': datetime.datetime(2022, 11, 25, 20, 3, 6, 823237, tzinfo=tzutc()), 'instrument': 'EUR_CHF'}, {'unrealizedPL': -1.1, 'currentUnits': 1000.0, 'id': 43, 'openTime': datetime.datetime(2022, 11, 25, 20, 2, 3, 194642, tzinfo=tzutc()), 'instrument': 'AUD_USD'}] 
+2022-11-25 15:04:10 TradeManager:close_trades() ids_to_close:[] 
+2022-11-25 15:04:10 TradeManager:Opened (47, True) {'pair': 'EUR_USD', 'units': -1000}
+2022-11-25 15:07:09 TradeManager:place_trades() [{'pair': 'GBP_USD', 'units': -1000}, {'pair': 'EUR_GBP', 'units': 1000}]
+2022-11-25 15:07:09 TradeManager:close_trades() pairs_to_close:['GBP_USD', 'EUR_GBP'] 
+2022-11-25 15:07:09 TradeManager:close_trades() open_trades:[{'unrealizedPL': -0.51, 'currentUnits': -1000.0, 'id': 47, 'openTime': datetime.datetime(2022, 11, 25, 20, 4, 10, 341118, tzinfo=tzutc()), 'instrument': 'EUR_USD'}, {'unrealizedPL': -1.3191, 'currentUnits': -1000.0, 'id': 45, 'openTime': datetime.datetime(2022, 11, 25, 20, 3, 6, 823237, tzinfo=tzutc()), 'instrument': 'EUR_CHF'}, {'unrealizedPL': -1.07, 'currentUnits': 1000.0, 'id': 43, 'openTime': datetime.datetime(2022, 11, 25, 20, 2, 3, 194642, tzinfo=tzutc()), 'instrument': 'AUD_USD'}] 
+2022-11-25 15:07:09 TradeManager:close_trades() ids_to_close:[] 
+2022-11-25 15:07:09 TradeManager:Opened (49, True) {'pair': 'GBP_USD', 'units': -1000}
+2022-11-25 15:07:09 TradeManager:Opened (51, True) {'pair': 'EUR_GBP', 'units': 1000}
