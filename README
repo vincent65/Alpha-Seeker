@@ -8,3 +8,4 @@ TO DO
 [ ] Improve handling of API Requests for bot
 [ ] Incorporate  charts into the Web Dash
 [ ] Use a streaming API in the bot for more accurate tick data
+[ ] Implement more complex strategies for the bot to trade
