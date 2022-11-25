@@ -1,7 +1,10 @@
 WebDash: VueJS Frontend and Flask Backend
 
 TradingBot: Using the Oanda API to backetest forex trading strategies
+Bot Logic
+New Candle? -> Process Data -> Trade? -> Make Trade
 
 TO DO 
-[x] Improve handling of API Requests for bot
-[x] Incorporate  charts into the Web Dash
+[ ] Improve handling of API Requests for bot
+[ ] Incorporate  charts into the Web Dash
+[ ] Use a streaming API in the bot for more accurate tick data
