@@ -3,3 +3,4 @@ __pycache__
 .ipynb_checkpoints
 defs.py 
 WebDash/defs.py
+TradingBot/defs.py
